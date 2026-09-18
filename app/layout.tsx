@@ -26,10 +26,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     >
       <body className="min-h-full flex flex-col">
         <nav className="p-4 bg-gray-100 flex gap-4">
-          <Link href="/">Home</Link>
-          <Link href="/dashboard">Dashboard</Link>
-          <Link href="/profile">Profile</Link>
-          <Link href="/health">Health</Link>
+          <Link href="/" className="text-gray-900 hover:text-blue-600">Home</Link>
+          <Link href="/dashboard" className="text-gray-900 hover:text-blue-600">Dashboard</Link>
+          <Link href="/profile" className="text-gray-900 hover:text-blue-600">Profile</Link>
+          <Link href="/health" className="text-gray-900 hover:text-blue-600">Health</Link>
+          <Link href="/playground" className="text-gray-900 hover:text-blue-600">Playground</Link>
         </nav>
         {children}
       </body>
