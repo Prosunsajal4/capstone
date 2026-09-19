@@ -31,7 +31,7 @@ export default function Chat() {
   const scrollToBottom = useCallback(
     (behavior: "auto" | "smooth" = "auto") => {
       const container = containerRef.current;
-      if (container) {
+      if (container && container.scrollTo) {
         container.scrollTo({
           top: container.scrollHeight,
           behavior,
